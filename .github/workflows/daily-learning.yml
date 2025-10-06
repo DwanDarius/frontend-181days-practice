@@ -1,0 +1,40 @@
+name: Daily Learning Manager
+
+on:
+  schedule:
+    # 每天UTC时间12:00（北京时间20:00）自动运行
+    - cron: '0 12 * * *'
+  workflow_dispatch: # 允许手动触发
+  push:
+    branches: [ main ]
+
+jobs:
+  learning-manager:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Generate daily learning tasks
+      run: |
+        node automation/scripts/daily-task-generator.js
+        
+    - name: Update progress dashboard
+      run: |
+        node automation/scripts/progress-tracker.js
+        
+    - name: Commit and push updates
+      run: |
+        git config --local user.name "GitHub Learning Bot"
+        git config --local user.email "action@github.com"
+        git add .
+        git diff --staged --quiet || git commit -m "📚 Auto-update: Daily learning schedule"
+        git push

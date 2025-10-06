@@ -1,0 +1,71 @@
+{
+  "modules": {
+    "A": {
+      "name": "HTML 基础",
+      "days": 25,
+      "description": "掌握HTML语义化、表单、多媒体等核心概念",
+      "days_detail": {
+        "1": {
+          "title": "HTML 文件与文档结构",
+          "goals": "了解 <!doctype>, <html>, <head>, <body>",
+          "deliverables": "一个包含基本结构的 index.html",
+          "difficulty": "入门",
+          "bilibili_p": 10,
+          "underlying_principles": [
+            "浏览器渲染引擎的工作流程",
+            "文档类型声明对浏览器渲染模式的影响"
+          ],
+          "review_questions": [
+            "<!doctype html> 声明的作用是什么？",
+            "<head> 和 <body> 的区别是什么？"
+          ],
+          "preview_focus": [
+            "字符编码与乱码问题的关系",
+            "viewport设置对移动端渲染的影响"
+          ],
+          "tags": ["html", "structure", "doctype"]
+        },
+        "2": {
+          "title": "Meta 与字符编码",
+          "goals": "设置 charset、viewport、meta 描述",
+          "deliverables": "index.html 的 head 完整示例",
+          "difficulty": "入门",
+          "bilibili_p": 11,
+          "underlying_principles": [
+            "字符编码对文本显示的影响",
+            "viewport对移动端适配的重要性"
+          ],
+          "review_questions": [
+            "UTF-8 编码有什么优势？",
+            "viewport 的 width=device-width 起什么作用？"
+          ],
+          "preview_focus": [
+            "标题标签的语义化层级",
+            "SEO基础概念"
+          ],
+          "tags": ["meta", "charset", "viewport"]
+        },
+        "3": {
+          "title": "标题标签 <h1>–<h6> 与语义",
+          "goals": "理解语义化标题层级",
+          "deliverables": "一篇示例文章带合适标题",
+          "difficulty": "入门",
+          "bilibili_p": 12,
+          "underlying_principles": [
+            "标题层级对SEO的影响",
+            "语义化对无障碍访问的重要性"
+          ],
+          "review_questions": [
+            "为什么不能跳过标题层级？",
+            "h1标签在页面中应该出现几次？"
+          ],
+          "preview_focus": [
+            "段落与文本格式化标签",
+            "HTML语义化概念"
+          ],
+          "tags": ["heading", "semantic", "seo"]
+        }
+      }
+    }
+  }
+}
