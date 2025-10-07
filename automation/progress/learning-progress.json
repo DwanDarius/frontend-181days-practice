@@ -45,6 +45,50 @@
         }
       ],
       "status": "pending"
+    },
+    "2025-10-07": {
+      "date": "2025-10-07",
+      "day_number": 1,
+      "study": {
+        "title": "HTML 文件与文档结构",
+        "goals": "了解 <!doctype>, <html>, <head>, <body>",
+        "deliverables": "一个包含基本结构的 index.html",
+        "difficulty": "入门",
+        "bilibili_p": 10,
+        "underlying_principles": [
+          "浏览器渲染引擎的工作流程",
+          "文档类型声明对浏览器渲染模式的影响"
+        ],
+        "review_questions": [
+          "<!doctype html> 声明的作用是什么？",
+          "<head> 和 <body> 的区别是什么？"
+        ],
+        "preview_focus": [
+          "字符编码与乱码问题的关系",
+          "viewport设置对移动端渲染的影响"
+        ],
+        "tags": [
+          "html",
+          "structure",
+          "doctype"
+        ]
+      },
+      "review": [],
+      "preview": [
+        {
+          "day": 2,
+          "title": "Meta 与字符编码",
+          "focus_points": [
+            "标题标签的语义化层级",
+            "SEO基础概念"
+          ],
+          "underlying_principles": [
+            "字符编码对文本显示的影响",
+            "viewport对移动端适配的重要性"
+          ]
+        }
+      ],
+      "status": "pending"
     }
   },
   "review_schedule": {}
